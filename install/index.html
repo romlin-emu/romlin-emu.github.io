@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Install RomP - RomP</title>
-<meta name="description" content="How to install RomP on macOS, Windows and Linux, what it needs (a RomM server, version 5.0 or newer), and how to connect it to your server.">
+<title>Install Romlin - Romlin</title>
+<meta name="description" content="How to install Romlin on macOS, Windows and Linux, what it needs (a RomM server, version 5.0 or newer), and how to connect it to your server.">
 <meta name="theme-color" content="#111215">
 <meta name="color-scheme" content="dark">
-<link rel="canonical" href="https://rompemu.github.io/install/">
+<link rel="canonical" href="https://romlin-emu.github.io/install/">
 <link rel="icon" href="/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="RomP">
-<meta property="og:title" content="Install RomP - RomP">
-<meta property="og:description" content="How to install RomP on macOS, Windows and Linux, what it needs (a RomM server, version 5.0 or newer), and how to connect it to your server.">
-<meta property="og:url" content="https://rompemu.github.io/install/">
-<meta property="og:image" content="https://rompemu.github.io/img/og.jpg">
+<meta property="og:site_name" content="Romlin">
+<meta property="og:title" content="Install Romlin - Romlin">
+<meta property="og:description" content="How to install Romlin on macOS, Windows and Linux, what it needs (a RomM server, version 5.0 or newer), and how to connect it to your server.">
+<meta property="og:url" content="https://romlin-emu.github.io/install/">
+<meta property="og:image" content="https://romlin-emu.github.io/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="/fonts/vg5000.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css?v=20261023-1">
@@ -24,35 +24,36 @@
 
 <header class="top">
   <div class="brand">
-    <a class="logo" href="/"><img src="/img/mark-nav.png" width="40" height="40" alt="">RomP</a>
+    <a class="logo" href="/"><img src="/img/mark-nav.png" width="40" height="40" alt="">Romlin</a>
   </div>
   <nav>
-    <a href="https://github.com/RompEmu/RomP">GitHub</a>
+    <a href="https://github.com/romlin-emu/romlin">GitHub</a>
     <a href="/#download">Download</a>
   </nav>
 </header>
 
 <main class="doc">
-<h1>Install RomP</h1>
-<p class="lede">RomP is a free app for macOS, Windows and Linux. It needs a <a href="https://romm.app">RomM</a> server, version 5.0 or newer, with your games on it.</p>
+<h1>Install Romlin</h1>
+<p class="lede">Romlin is a free app for macOS, Windows and Linux. It needs a <a href="https://romm.app">RomM</a> server, version 5.0 or newer, with your games on it.</p>
 
 <h2>What you need</h2>
 <ul>
-  <li>A RomM server, version 5.0 or newer. Sending games to RomP from RomM's Install on device needs RomM 5.4.</li>
-  <li>Your own games and BIOS files on that server. RomP doesn't include any.</li>
+  <li>A RomM server, version 5.0 or newer. Sending games to Romlin from RomM's Install on device needs RomM 5.4.</li>
+  <li>Your own games and BIOS files on that server. Romlin doesn't include any.</li>
   <li>A Mac with Apple silicon and macOS 11 or newer, or a 64-bit Intel or AMD PC with Windows or Linux.</li>
 </ul>
 
 <h2>macOS</h2>
-<p>Download the macOS zip from the <a href="https://github.com/RompEmu/RomP/releases/latest">latest release</a>, unzip it and move RomP to Applications. Release builds are signed and notarized by Apple.</p>
+<p>Download the macOS zip from the <a href="https://github.com/romlin-emu/romlin/releases/latest">latest release</a>, unzip it and move Romlin to Applications. Signing and notarization depend on the release; check its release notes before installing.</p>
 <p>Or install it with <a href="https://brew.sh">Homebrew</a>:</p>
-<p><code>brew install --cask rompemu/tap/romp</code></p>
+<p>Homebrew will be enabled after the first verified Romlin release:</p>
+<p><code>brew install --cask romlin-emu/tap/romlin</code></p>
 
 <h2>Windows</h2>
-<p>Download the Windows zip from the <a href="https://github.com/RompEmu/RomP/releases/latest">latest release</a>, unzip it and open RomP. Windows builds aren't signed yet, so the first time Windows warns you: choose More info, then Run anyway.</p>
+<p>Download the Windows zip from the <a href="https://github.com/romlin-emu/romlin/releases/latest">latest release</a>, unzip it and open Romlin. Windows builds aren't signed yet, so the first time Windows warns you: choose More info, then Run anyway.</p>
 
 <h2>Linux</h2>
-<p>The <a href="https://github.com/RompEmu/RomP/releases/latest">latest release</a> has four downloads. Pick one:</p>
+<p>The <a href="https://github.com/romlin-emu/romlin/releases/latest">latest release</a> has four downloads. Pick one:</p>
 <ul>
   <li><strong>AppImage</strong>: one file that runs on most distributions. Make it executable and open it.</li>
   <li><strong>.deb</strong>: for Debian, Ubuntu and their relatives.</li>
@@ -62,32 +63,30 @@
 
 <h2>Connect to your RomM server</h2>
 <ol>
-  <li>Open RomP and enter your RomM server's address.</li>
-  <li>Approve RomP in RomM, by scanning the code shown with your phone or opening the link. RomP never stores your password.</li>
-  <li>Open a game and press Play. RomP downloads the game and the emulator it needs, and fetches BIOS files from your server's firmware.</li>
+  <li>Open Romlin and enter your RomM server's address.</li>
+  <li>Approve Romlin in RomM, by scanning the code shown with your phone or opening the link. Romlin never stores your password.</li>
+  <li>Open a game and press Play. Romlin downloads the game and the emulator it needs, and fetches BIOS files from your server's firmware.</li>
 </ol>
 
 <h2>Updates</h2>
-<p>RomP checks GitHub once a day and tells you when a new version is out. You can turn this off in Settings. With Homebrew, <code>brew upgrade</code> updates it.</p>
-<p>The <a href="https://github.com/RompEmu/RomP/releases/tag/nightly">nightly build</a> has the newest changes before they're released. Nightly macOS builds aren't notarized: the first time, right-click RomP and choose Open.</p>
+<p>Romlin checks GitHub once a day and tells you when a new version is out. You can turn this off in Settings. With Homebrew, <code>brew upgrade</code> updates it.</p>
+<p>The <a href="https://github.com/romlin-emu/romlin/releases/tag/nightly">nightly build</a> has the newest changes before they're released. Nightly macOS builds aren't notarized: the first time, right-click Romlin and choose Open.</p>
 
-<h2>Where RomP keeps your files</h2>
-<p>Downloaded games, saves, save states, screenshots and settings are in <code>~/Library/Application Support/Romp</code> on macOS, <code>%LOCALAPPDATA%\Romp</code> on Windows and <code>~/.local/share/Romp</code> on Linux. Sign-in tokens are kept in your system's keychain or credential store.</p>
+<h2>Where Romlin keeps your files</h2>
+<p>Downloaded games, saves, save states, screenshots and settings are in <code>~/Library/Application Support/Romlin</code> on macOS, <code>%LOCALAPPDATA%\Romlin</code> on Windows and <code>~/.local/share/Romlin</code> on Linux. Sign-in tokens are kept in your system's keychain or credential store.</p>
 
-<nav class="doc-nav" aria-label="More about RomP">
-  <a href="/">What RomP is</a>
+<nav class="doc-nav" aria-label="More about Romlin">
+  <a href="/">What Romlin is</a>
   <a href="/systems/">Supported systems</a>
   <a href="/saves/">Save sync</a>
   <a href="/faq/">FAQ</a>
-  <a href="https://github.com/RompEmu/RomP/blob/main/CHANGELOG.md">Changelog</a>
+  <a href="https://github.com/romlin-emu/romlin/blob/main/CHANGELOG.md">Changelog</a>
 </nav>
 </main>
 
 <footer>
-  <p>RomP is GPL-3.0. <a href="https://github.com/RompEmu/RomP">Source</a> <a href="https://github.com/RompEmu/RomP/blob/main/CHANGELOG.md">Changelog</a></p>
-  <p class="byline">A project by <a href="https://beshr.com">Beshr</a></p>
+  <p>Romlin is a fork of <a href="https://github.com/RompEmu/RomP">RomP</a>, originally created by <a href="https://beshr.com">Beshr</a>, and is licensed under GPL-3.0-or-later. <a href="https://github.com/romlin-emu/romlin">Source</a> <a href="https://github.com/romlin-emu/romlin/blob/main/CHANGELOG.md">Changelog</a></p>
 </footer>
 
-<script data-goatcounter="https://romp.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

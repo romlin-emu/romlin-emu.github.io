@@ -64,44 +64,6 @@ h1, h2 { text-wrap: balance; }
 p { text-wrap: pretty; }
 img { display: block; max-width: 100%; height: auto; }
 
-.topbar {
-  position: relative;
-  z-index: 11;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: .6rem 3rem;
-  background: #1a1b20;
-  border-bottom: 1px solid var(--line);
-  color: var(--muted);
-  font-size: .9375rem;
-  text-align: center;
-}
-
-.topbar p { margin: 0; }
-.topbar a { color: var(--orange); }
-
-.topbar button {
-  position: absolute;
-  right: .75rem;
-  top: 50%;
-  translate: 0 -50%;
-  width: 2rem;
-  height: 2rem;
-  border: 0;
-  border-radius: 4px;
-  background: transparent;
-  color: var(--muted);
-  font-size: 1.25rem;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.topbar button:hover { color: var(--text); background: rgb(255 255 255 / .06); }
-
-.topbar[hidden] { display: none; }
-
 .top {
   position: relative;
   z-index: 10;

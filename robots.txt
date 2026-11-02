@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rompemu.github.io/sitemap.xml
+Sitemap: https://romlin-emu.github.io/sitemap.xml

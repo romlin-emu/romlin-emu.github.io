@@ -1,14 +1,3 @@
-const topbar = document.querySelector("[data-topbar]");
-if (topbar) {
-  try {
-    if (localStorage.getItem("hideTranslateBar")) topbar.hidden = true;
-  } catch {}
-  topbar.querySelector("[data-topbar-close]").addEventListener("click", () => {
-    topbar.hidden = true;
-    try { localStorage.setItem("hideTranslateBar", "1"); } catch {}
-  });
-}
-
 const platform = navigator.userAgentData?.platform || navigator.platform || "";
 const os = /mac/i.test(platform) ? "Mac" : /win/i.test(platform) ? "Windows" : /linux/i.test(platform) ? "Linux" : null;
 
@@ -25,7 +14,7 @@ const builds = [
   { os: "Linux", label: "Fedora and openSUSE", name: ".rpm", match: /\.rpm$/ },
 ];
 
-fetch("https://api.github.com/repos/RompEmu/RomP/releases/latest")
+fetch("https://api.github.com/repos/romlin-emu/romlin/releases/latest")
   .then(r => r.ok ? r.json() : null)
   .then(release => {
     if (!release) return;

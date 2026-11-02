@@ -1,30 +1,32 @@
-# RomP
+# Romlin
 
-> RomP is a free, open source desktop app for macOS, Windows and Linux that plays the games in a RomM library. It downloads each game and the right emulator, and syncs in-game saves and save states with the RomM server. It needs RomM 5.0 or newer, and includes no games or BIOS files.
+> Romlin is a free, open source desktop app for macOS, Windows and Linux that plays the games in a RomM library. It downloads each game and the right emulator, and syncs in-game saves and save states with the RomM server. It needs RomM 5.0 or newer, and includes no games or BIOS files.
 
-RomM (https://romm.app) is a self-hosted server for a personal game collection. RomP is a client for it, made by an independent developer, not by the RomM team.
+RomM (https://romm.app) is a self-hosted server for a personal game collection. Romlin is a client for it, independently maintained as a fork of Beshr’s RomP, not by the RomM team. Original copyrights and third-party licenses are retained. Romlin is available in English.
 
 ## Docs
 
-- [Install](https://rompemu.github.io/install/): requirements and downloads for macOS, Windows and Linux, Homebrew, and connecting to a RomM server
-- [Supported systems](https://rompemu.github.io/systems/): every system RomP plays and the emulator it uses
-- [Save sync](https://rompemu.github.io/saves/): when saves sync, offline play, conflicts, saves shared with other apps, and limits
-- [Questions and answers](https://rompemu.github.io/faq/): what RomP is, cost, privacy, controllers, RetroAchievements, comparison with RetroArch and OpenEmu, translations, plans
+- [Install](https://romlin-emu.github.io/install/): requirements and downloads for macOS, Windows and Linux, Homebrew, and connecting to a RomM server
+- [Supported systems](https://romlin-emu.github.io/systems/): every system Romlin plays and the emulator it uses
+- [Save sync](https://romlin-emu.github.io/saves/): when saves sync, offline play, conflicts, saves shared with other apps, and limits
+- [Questions and answers](https://romlin-emu.github.io/faq/): what Romlin is, cost, privacy, controllers, RetroAchievements, comparison with RetroArch and OpenEmu, language, plans
 
 ## Facts
 
-- Platforms: macOS 11 or newer on Apple silicon; Windows and Linux on x86-64. Linux builds: AppImage, .deb, .rpm and tar.gz. Homebrew: `brew install --cask rompemu/tap/romp`.
-- Needs a RomM server, version 5.0 or newer. RomM 5.4 adds sending games to RomP with Install on device, and notifications.
+- Platforms: macOS 11 or newer on Apple silicon; Windows and Linux on x86-64. Linux builds: AppImage, .deb, .rpm and tar.gz. Homebrew, once the first release checksum is verified: `brew install --cask romlin-emu/tap/romlin`.
+- Needs a RomM server, version 5.0 or newer. RomM 5.4 adds sending games to Romlin with Install on device, and notifications.
 - Emulators: libretro cores, plus xemu for Xbox and RPCS3 for PS3, downloaded automatically the first time a system is played. More than 50 systems, from the Atari 2600 to the PS3.
 - Saves: in-game saves and save states sync with RomM before and after playing. A save changed on two devices asks which to keep and backs up the other. Xbox and PS3 saves don't sync yet.
 - Each game runs in its own sandboxed process.
-- RetroAchievements: supported, with popups and leaderboards. Hardcore mode waits for RetroAchievements to approve RomP.
+- RetroAchievements: supported, with popups and leaderboards. Hardcore mode waits for RetroAchievements to approve Romlin.
 - Controllers: automatic, any button can be remapped, and the whole app works with a controller.
 - Cost: free, with no paid features, ads, tracking or accounts of its own. License: GPL-3.0-or-later.
 
 ## Links
 
-- [Source code](https://github.com/RompEmu/RomP)
-- [Latest release](https://github.com/RompEmu/RomP/releases/latest)
-- [Changelog](https://github.com/RompEmu/RomP/blob/main/CHANGELOG.md)
-- [Privacy](https://github.com/RompEmu/RomP/blob/main/PRIVACY.md)
+- [Source code](https://github.com/romlin-emu/romlin)
+- [Latest release](https://github.com/romlin-emu/romlin/releases/latest)
+- [Changelog](https://github.com/romlin-emu/romlin/blob/main/CHANGELOG.md)
+- [Privacy](https://github.com/romlin-emu/romlin/blob/main/PRIVACY.md)
+
+- [Original RomP project](https://github.com/RompEmu/RomP) by [Beshr](https://beshr.com)
